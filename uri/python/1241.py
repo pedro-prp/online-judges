@@ -1,9 +1,5 @@
-
 n = input()
 for _ in range(int(n)):
-    s = input().split(' ')
+    s = input()
 
-    if s[1] == s[0][-len(s[1]):]:
-        print('encaixa')
-    else:
-        print('nao encaixa')
+    print(s[0:int(len(s)/2)][::-1] + s[int(len(s)/2):][::-1])
